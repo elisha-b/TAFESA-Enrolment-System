@@ -39,5 +39,60 @@ namespace TAFESA_Enrolment_System
         {
             return "Student ID: " + StudentID + "\nProgram: " + Program + "\nDate Registered: " + DateRegistered + "\n" + Enrolment;
         }
+
+        /// <summary>
+        /// Checks if two Student objects are == based on Student ID
+        /// </summary>
+        /// <param name="other">StudentID compared to current StudentID</param>
+        /// <returns>True or False</returns>
+        public bool Equals(Student other)
+        {
+            return StudentID == other.StudentID;
+        }
+
+        /// <summary>
+        /// Checks if specified object == this object based on Student ID
+        /// </summary>
+        /// <param name="obj">Student object compared to current Student object</param>
+        /// <returns>True or False</returns>
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+                return false;
+            if (!(obj is Student))
+                return false;
+            return StudentID.Equals(((Student)obj).StudentID);
+        }
+
+        /// <summary>
+        /// Gets hash code for Student object based on Student ID
+        /// </summary>
+        /// <returns>Hash code</returns>
+        public override int GetHashCode()
+        {
+            return StudentID.GetHashCode();
+        }
+
+        /// <summary>
+        /// Checks if two Student objects are == based on Student ID
+        /// </summary>
+        /// <param name="x">First Student object</param>
+        /// <param name="y">Second Student object</param>
+        /// <returns>True or False</returns>
+        public static bool operator ==(Student x, Student y)
+        {
+            return x.StudentID == y.StudentID;
+        }
+
+        /// <summary>
+        /// Checks if two Student objects are != based on Student ID
+        /// </summary>
+        /// <param name="x">First Student object</param>
+        /// <param name="y">Second Student object</param>
+        /// <returns>True or False</returns>
+        public static bool operator !=(Student x, Student y)
+        {
+            return x.StudentID != y.StudentID;
+        }
     }
 }
