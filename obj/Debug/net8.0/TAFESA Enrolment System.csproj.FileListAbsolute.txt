@@ -1,0 +1,15 @@
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\bin\Debug\net8.0\TAFESA Enrolment System.exe
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\bin\Debug\net8.0\TAFESA Enrolment System.deps.json
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\bin\Debug\net8.0\TAFESA Enrolment System.runtimeconfig.json
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\bin\Debug\net8.0\TAFESA Enrolment System.dll
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\bin\Debug\net8.0\TAFESA Enrolment System.pdb
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\obj\Debug\net8.0\TAFESA Enrolment System.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\obj\Debug\net8.0\TAFESA Enrolment System.AssemblyInfoInputs.cache
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\obj\Debug\net8.0\TAFESA Enrolment System.AssemblyInfo.cs
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\obj\Debug\net8.0\TAFESA Enrolment System.csproj.CoreCompileInputs.cache
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\obj\Debug\net8.0\TAFESA Enrolment System.sourcelink.json
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\obj\Debug\net8.0\TAFESA Enrolment System.dll
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\obj\Debug\net8.0\refint\TAFESA Enrolment System.dll
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\obj\Debug\net8.0\TAFESA Enrolment System.pdb
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\obj\Debug\net8.0\TAFESA Enrolment System.genruntimeconfig.cache
+C:\TAFE SA\PRG547 - Advanced C#\Assessments\Assessment 1\TAFESA-Enrolment-System\obj\Debug\net8.0\ref\TAFESA Enrolment System.dll

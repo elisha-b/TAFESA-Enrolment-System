@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TAFESA Enrolment System/1.0.0": {
+        "runtime": {
+          "TAFESA Enrolment System.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TAFESA Enrolment System/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
