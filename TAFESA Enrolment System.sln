@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAFESA Enrolment System", "TAFESA Enrolment System.csproj", "{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {039C0BA1-2B37-4815-B7B8-5C10022EBE98}
+	EndGlobalSection
+EndGlobal

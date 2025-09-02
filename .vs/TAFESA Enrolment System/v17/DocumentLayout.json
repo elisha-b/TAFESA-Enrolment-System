@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|c:\\tafe sa\\prg547 - advanced c#\\assessments\\assessment 1\\tafesa-enrolment-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T12:50:32.092Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
