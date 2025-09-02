@@ -14,7 +14,7 @@ p2.Program = "Diploma of IT";
 p2.DateRegistered = "2020-01-01";
 
 // Set p2 enrolment details
-p2.Enrolment = new Enrolment("2020-02-01", "P", 1);
+p2.Enrolment = new Enrolment("2020-02-01", "P", 1, new Subject("PRG547", "Advanced C#", 800.0));
 
 // Display p2 details
 Console.WriteLine("\n[ P2 details ]");
