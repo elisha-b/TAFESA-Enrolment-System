@@ -11,6 +11,7 @@ namespace TAFESA_Enrolment_System
         private string name;
         private string email;
         private string phoneNumber;
+        private Address address;
 
         const string DEF_NAME = "N/A";
         const string DEF_EMAIL = "N/A";
@@ -19,20 +20,24 @@ namespace TAFESA_Enrolment_System
         public string Name { get; set; }
 
         public string Email { get; set; }
+
         public string PhoneNumber { get; set; }
 
-        public Person(): this(DEF_NAME, DEF_EMAIL, DEF_PHONE) { }
+        public Address Address { get; set; }
 
-        public Person(string name, string email, string phoneNumber)
+        public Person(): this(DEF_NAME, DEF_EMAIL, DEF_PHONE, new Address()) { }
+
+        public Person(string name, string email, string phoneNumber, Address address)
         {
             Name = name;
             Email = email;
             PhoneNumber = phoneNumber;
+            Address = address;
         }
 
         public override string ToString()
         {
-            return "Name: " + Name + "\nEmail: " + Email + "\nPhone Number: " + PhoneNumber;
+            return "Name: " + Name + "\nEmail: " + Email + "\nPhone Number: " + PhoneNumber + "\nAddress: " + Address; 
         }
     }
 }
