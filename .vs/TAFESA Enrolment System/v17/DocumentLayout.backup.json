@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|c:\\tafe sa\\prg547 - advanced c#\\assessments\\assessment 1\\tafesa-enrolment-system\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|solutionrelative:person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|c:\\tafe sa\\prg547 - advanced c#\\assessments\\assessment 1\\tafesa-enrolment-system\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|c:\\tafe sa\\prg547 - advanced c#\\assessments\\assessment 1\\tafesa-enrolment-system\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|solutionrelative:address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|c:\\tafe sa\\prg547 - advanced c#\\assessments\\assessment 1\\tafesa-enrolment-system\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|solutionrelative:person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Student.cs",
+              "RelativeDocumentMoniker": "Student.cs",
+              "ToolTip": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Student.cs",
+              "RelativeToolTip": "Student.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T14:27:53.987Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -32,20 +49,20 @@
               "RelativeDocumentMoniker": "Address.cs",
               "ToolTip": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Address.cs",
               "RelativeToolTip": "Address.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAwCgAAABdAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T14:08:17.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Person.cs",
               "RelativeDocumentMoniker": "Person.cs",
               "ToolTip": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Person.cs",
               "RelativeToolTip": "Person.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowCIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T13:02:56.537Z",
               "EditorCaption": ""
@@ -58,7 +75,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwCIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-02T12:50:32.092Z",
               "EditorCaption": ""

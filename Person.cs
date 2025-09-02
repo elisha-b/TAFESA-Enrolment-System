@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TAFESA_Enrolment_System
 {
-    internal class Person
+    internal class Person : Student
     {
         private string name;
         private string email;
@@ -27,7 +27,7 @@ namespace TAFESA_Enrolment_System
 
         public Person(): this(DEF_NAME, DEF_EMAIL, DEF_PHONE, new Address()) { }
 
-        public Person(string name, string email, string phoneNumber, Address address)
+        public Person(string name, string email, string phoneNumber, Address address) : base()
         {
             Name = name;
             Email = email;
@@ -37,7 +37,7 @@ namespace TAFESA_Enrolment_System
 
         public override string ToString()
         {
-            return "Name: " + Name + "\nEmail: " + Email + "\nPhone Number: " + PhoneNumber + "\nAddress: " + Address; 
+            return base.ToString() + "\nName: " + Name + "\nEmail: " + Email + "\nPhone Number: " + PhoneNumber + "\nAddress: " + Address; 
         }
     }
 }
