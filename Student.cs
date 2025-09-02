@@ -11,6 +11,7 @@ namespace TAFESA_Enrolment_System
         private string studentID;
         private string program;
         private string dateRegistered;
+        private Enrolment enrolment;
 
         const string DEF_STUDENT_ID = "N/A";
         const string DEF_PROGRAM = "N/A";
@@ -22,18 +23,21 @@ namespace TAFESA_Enrolment_System
 
         public string DateRegistered { get; set; }
 
-        public Student() : this(DEF_STUDENT_ID, DEF_PROGRAM, DEF_DATE_REGISTERED) { }
+        public Enrolment Enrolment { get; set; }
 
-        public Student(string studentID, string program, string dateRegistered)
+        public Student() : this(DEF_STUDENT_ID, DEF_PROGRAM, DEF_DATE_REGISTERED, new Enrolment()) { }
+
+        public Student(string studentID, string program, string dateRegistered, Enrolment enrolment)
         {
             StudentID = studentID;
             Program = program;
             DateRegistered = dateRegistered;
+            Enrolment = enrolment;
         }
 
         public override string ToString()
         {
-            return "Student ID: " + StudentID + "\nProgram: " + Program + "\nDate Registered: " + DateRegistered;
+            return "Student ID: " + StudentID + "\nProgram: " + Program + "\nDate Registered: " + DateRegistered + "\n" + Enrolment;
         }
     }
 }
