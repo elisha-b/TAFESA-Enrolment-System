@@ -24,5 +24,26 @@ namespace TAFESA_Enrolment_System
             else
                 return -1;
         }
+
+        public static int BinarySearchArray<T>(T[] array, T target) where T : IComparable<T>
+        {
+            int left = 0;
+            int right = array.Length - 1;
+
+            while (left <= right)
+            {
+                int mid = left + (right - left) / 2;
+                int comparison = array[mid].CompareTo(target);
+
+                if (comparison == 0)
+                    return mid;
+                else if (comparison < 0)
+                    left = mid + 1;
+                else
+                    right = mid - 1;
+            }
+
+            return -1;
+        }
     }
 }
