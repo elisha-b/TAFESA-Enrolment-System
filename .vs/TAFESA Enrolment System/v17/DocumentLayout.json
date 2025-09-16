@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|c:\\tafe sa\\prg547 - advanced c#\\assessments\\assessment 1\\tafesa-enrolment-system\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|solutionrelative:utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|c:\\tafe sa\\prg547 - advanced c#\\assessments\\assessment 1\\tafesa-enrolment-system\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1351A3D-D4F4-4782-AC16-64D20F00B2E2}|TAFESA Enrolment System.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Utility.cs",
+              "RelativeDocumentMoniker": "Utility.cs",
+              "ToolTip": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Utility.cs",
+              "RelativeToolTip": "Utility.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T23:56:46.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Student.cs",
               "RelativeDocumentMoniker": "Student.cs",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\TAFE SA\\PRG547 - Advanced C#\\Assessments\\Assessment 1\\TAFESA-Enrolment-System\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T12:50:32.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-02T12:50:32.092Z"
             }
           ]
         }
