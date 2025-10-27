@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TAFESA_Enrolment_System
 {
-    internal class Person : Student
+    internal class Person
     {
         private string name;
         private string email;

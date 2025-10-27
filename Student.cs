@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TAFESA_Enrolment_System
 {
-    abstract class Student
+    abstract class Student : Person
     {
         private string studentID;
         private string program;
@@ -25,9 +25,17 @@ namespace TAFESA_Enrolment_System
 
         public Enrolment Enrolment { get; set; }
 
-        public Student() : this(DEF_STUDENT_ID, DEF_PROGRAM, DEF_DATE_REGISTERED, new Enrolment()) { }
+        public Student() : base("N/A", "N/A", "N/A", new Address())
+        {
+            StudentID = DEF_STUDENT_ID;
+            Program = DEF_PROGRAM;
+            DateRegistered = DEF_DATE_REGISTERED;
+            Enrolment = new Enrolment();
+        }
 
-        public Student(string studentID, string program, string dateRegistered, Enrolment enrolment)
+        public Student(string name, string email, string phoneNumber, Address address,
+            string studentID, string program, string dateRegistered, Enrolment enrolment)
+            : base(name, email, phoneNumber, address)
         {
             StudentID = studentID;
             Program = program;
@@ -37,7 +45,7 @@ namespace TAFESA_Enrolment_System
 
         public override string ToString()
         {
-            return "Student ID: " + StudentID + "\nProgram: " + Program + "\nDate Registered: " + DateRegistered + "\n" + Enrolment;
+            return base.ToString() + "Student ID: " + StudentID + "\nProgram: " + Program + "\nDate Registered: " + DateRegistered + "\n" + Enrolment;
         }
 
         /// <summary>
