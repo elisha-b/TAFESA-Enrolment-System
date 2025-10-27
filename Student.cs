@@ -89,7 +89,7 @@ namespace TAFESA_Enrolment_System
         /// <returns>True or False</returns>
         public static bool operator ==(Student x, Student y)
         {
-            return x.StudentID == y.StudentID;
+            return object.Equals(x, y);
         }
 
         /// <summary>
@@ -100,7 +100,7 @@ namespace TAFESA_Enrolment_System
         /// <returns>True or False</returns>
         public static bool operator !=(Student x, Student y)
         {
-            return x.StudentID != y.StudentID;
+            return !object.Equals(x, y);
         }
     }
 }
