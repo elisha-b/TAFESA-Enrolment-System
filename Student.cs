@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace TAFESA_Enrolment_System
 {
-    abstract class Student : Person
+    class Student : Person
     {
         private string studentID;
         private string program;
         private string dateRegistered;
         private Enrolment enrolment;
-
+        private Person p2;
         const string DEF_STUDENT_ID = "N/A";
         const string DEF_PROGRAM = "N/A";
         const string DEF_DATE_REGISTERED = "N/A";
@@ -25,7 +25,7 @@ namespace TAFESA_Enrolment_System
 
         public Enrolment Enrolment { get; set; }
 
-        public Student() : base("N/A", "N/A", "N/A", new Address())
+        public Student(Person person) : base(person.Name, person.Email, person.PhoneNumber, new Address())
         {
             StudentID = DEF_STUDENT_ID;
             Program = DEF_PROGRAM;
@@ -45,7 +45,7 @@ namespace TAFESA_Enrolment_System
 
         public override string ToString()
         {
-            return base.ToString() + "Student ID: " + StudentID + "\nProgram: " + Program + "\nDate Registered: " + DateRegistered + "\n" + Enrolment;
+            return base.ToString() + "\nStudent ID: " + StudentID + "\nProgram: " + Program + "\nDate Registered: " + DateRegistered + "\n" + Enrolment;
         }
 
         /// <summary>
