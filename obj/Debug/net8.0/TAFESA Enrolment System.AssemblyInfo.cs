@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TAFESA Enrolment System")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d8f96247cc70277a2696138ab9a6ec244f1f1ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1606f25ef400ac20acea276ba33c6ee2655e879")]
 [assembly: System.Reflection.AssemblyProductAttribute("TAFESA Enrolment System")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TAFESA Enrolment System")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

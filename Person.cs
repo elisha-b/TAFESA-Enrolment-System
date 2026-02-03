@@ -13,9 +13,9 @@ namespace TAFESA_Enrolment_System
         private string phoneNumber;
         private Address address;
 
-        const string DEF_NAME = "N/A";
-        const string DEF_EMAIL = "N/A";
-        const string DEF_PHONE = "N/A";
+        public const string DEF_NAME = "N/A";
+        public const string DEF_EMAIL = "N/A";
+        public const string DEF_PHONE = "N/A";
 
         public string Name { get; set; }
 

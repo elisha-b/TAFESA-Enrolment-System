@@ -12,10 +12,9 @@ namespace TAFESA_Enrolment_System
         private string program;
         private string dateRegistered;
         private Enrolment enrolment;
-        private Person p2;
-        const string DEF_STUDENT_ID = "N/A";
-        const string DEF_PROGRAM = "N/A";
-        const string DEF_DATE_REGISTERED = "N/A";
+        public const string DEF_STUDENT_ID = "N/A";
+        public const string DEF_PROGRAM = "N/A";
+        public const string DEF_DATE_REGISTERED = "N/A";
 
         public string StudentID { get; set; }
 
@@ -25,13 +24,7 @@ namespace TAFESA_Enrolment_System
 
         public Enrolment Enrolment { get; set; }
 
-        public Student(Person person) : base(person.Name, person.Email, person.PhoneNumber, new Address())
-        {
-            StudentID = DEF_STUDENT_ID;
-            Program = DEF_PROGRAM;
-            DateRegistered = DEF_DATE_REGISTERED;
-            Enrolment = new Enrolment();
-        }
+        public Student() : this(DEF_NAME, DEF_EMAIL, DEF_PHONE, new Address(), DEF_STUDENT_ID, DEF_PROGRAM, DEF_DATE_REGISTERED, new Enrolment()) { }
 
         public Student(string name, string email, string phoneNumber, Address address,
             string studentID, string program, string dateRegistered, Enrolment enrolment)

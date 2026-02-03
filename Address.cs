@@ -27,6 +27,7 @@ namespace TAFESA_Enrolment_System
         public string State { get; set; }
 
         public Address() : this(DEF_STREET_NUM, DEF_STREET_NAME, DEF_SUBURB, DEF_POSTCODE, DEF_STATE) { }
+
         public Address(string streetNum, string streetName, string suburb, string postcode, string state)
         {
             StreetNum = streetNum;
