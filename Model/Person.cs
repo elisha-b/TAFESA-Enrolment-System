@@ -4,15 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TAFESA_Enrolment_System
+namespace TAFESA_Enrolment_System.Model
 {
     internal class Person
     {
-        private string name;
-        private string email;
-        private string phoneNumber;
-        private Address address;
-
         public const string DEF_NAME = "N/A";
         public const string DEF_EMAIL = "N/A";
         public const string DEF_PHONE = "N/A";

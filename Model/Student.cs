@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TAFESA_Enrolment_System
+namespace TAFESA_Enrolment_System.Model
 {
     class Student : Person
     {
-        private string studentID;
-        private string program;
-        private string dateRegistered;
-        private Enrolment enrolment;
         public const string DEF_STUDENT_ID = "N/A";
         public const string DEF_PROGRAM = "N/A";
         public const string DEF_DATE_REGISTERED = "N/A";
@@ -82,7 +78,7 @@ namespace TAFESA_Enrolment_System
         /// <returns>True or False</returns>
         public static bool operator ==(Student x, Student y)
         {
-            return object.Equals(x, y);
+            return Equals(x, y);
         }
 
         /// <summary>
@@ -93,7 +89,7 @@ namespace TAFESA_Enrolment_System
         /// <returns>True or False</returns>
         public static bool operator !=(Student x, Student y)
         {
-            return !object.Equals(x, y);
+            return !Equals(x, y);
         }
     }
 }

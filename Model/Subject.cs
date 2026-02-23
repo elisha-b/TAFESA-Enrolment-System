@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TAFESA_Enrolment_System
+namespace TAFESA_Enrolment_System.Model
 {
     internal class Subject
-    {
-        private string subjectCode;
-        private string subjectName;
-        private double cost;
-
+    {   
         const string DEF_SUBJECT_CODE = "N/A";
         const string DEF_SUBJECT_NAME = "N/A";
         const double DEF_COST = 0.0;

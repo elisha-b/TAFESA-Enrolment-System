@@ -4,16 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TAFESA_Enrolment_System
+namespace TAFESA_Enrolment_System.Model
 {
     internal class Address
     {
-        private string streetNum;
-        private string streetName;
-        private string suburb;
-        private string postcode;
-        private string state;
-
         const string DEF_STREET_NUM = "N/A";
         const string DEF_STREET_NAME = "N/A";
         const string DEF_SUBURB = "N/A";

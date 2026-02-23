@@ -4,15 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TAFESA_Enrolment_System
+namespace TAFESA_Enrolment_System.Model
 {
     internal class Enrolment
     {
-        private string dateEnrolled;
-        private string grade;
-        private int semester;
-        private Subject subject;
-
         const string DEF_DATE_ENROLLED = "N/A";
         const string DEF_GRADE = "N/A";
         const int DEF_SEMESTER = -1;

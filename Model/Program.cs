@@ -1,4 +1,5 @@
 ﻿using TAFESA_Enrolment_System;
+using TAFESA_Enrolment_System.Model;
 
 // Create Person object p1
 Console.WriteLine("[ Test getters Person class (no-arg) ]");
