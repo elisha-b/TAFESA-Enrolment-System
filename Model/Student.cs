@@ -20,8 +20,13 @@ namespace TAFESA_Enrolment_System.Model
 
         public Enrolment Enrolment { get; set; }
 
+        // No-arg constructor
         public Student() : this(DEF_NAME, DEF_EMAIL, DEF_PHONE, new Address(), DEF_STUDENT_ID, DEF_PROGRAM, DEF_DATE_REGISTERED, new Enrolment()) { }
 
+        // Single-arg constructor (StudentID)
+        public Student(string studentID) : this(DEF_NAME, DEF_EMAIL, DEF_PHONE, new Address(), studentID, DEF_PROGRAM, DEF_DATE_REGISTERED, new Enrolment()) { }
+
+        // All-arg constructor
         public Student(string name, string email, string phoneNumber, Address address,
             string studentID, string program, string dateRegistered, Enrolment enrolment)
             : base(name, email, phoneNumber, address)

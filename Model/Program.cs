@@ -59,4 +59,10 @@ Console.WriteLine("S2 equals S4 (Exp. True): " + s2.Equals(s4));
 Console.WriteLine("S2 == S4 (Exp. True): " + (s2 == s4));
 Console.WriteLine("S2 != S4 (Exp. False): " + (s2 != s4));
 
+// Test single-arg constructor
+Student s5 = new Student();
+s5.StudentID = "00839223";
+Console.WriteLine("\n[ S5 details (single-arg) ]");
+Console.WriteLine(s5);
+
 Console.ReadKey();
