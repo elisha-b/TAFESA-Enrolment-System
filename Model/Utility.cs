@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TAFESA_Enrolment_System.Model
 {
-    internal class Utility
+    public class Utility
     {
         public static int LinearSearchArray<T>(T[] array, T target) where T : IComparable<T>
         {

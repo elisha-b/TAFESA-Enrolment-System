@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TAFESA_Enrolment_System.Model
 {
-    class Student : Person
+    internal class Student : Person, IComparable<Student>
     {
         public const string DEF_STUDENT_ID = "N/A";
         public const string DEF_PROGRAM = "N/A";
@@ -95,6 +95,14 @@ namespace TAFESA_Enrolment_System.Model
         public static bool operator !=(Student x, Student y)
         {
             return !Equals(x, y);
+        }
+
+        public int CompareTo(Student other)
+        {
+            if (other == null)
+                return 1;
+
+            return StudentID.CompareTo(other.StudentID);
         }
     }
 }
