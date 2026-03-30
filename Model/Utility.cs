@@ -8,6 +8,7 @@ namespace TAFESA_Enrolment_System.Model
 {
     public class Utility
     {
+        // Linear Search Array
         public static int LinearSearchArray<T>(T[] array, T target) where T : IComparable<T>
         {
             int i = 0;
@@ -25,6 +26,7 @@ namespace TAFESA_Enrolment_System.Model
                 return -1;
         }
 
+        // Binary Search Array
         public static int BinarySearchArray<T>(T[] array, T target) where T : IComparable<T>
         {
             int left = 0;
@@ -44,6 +46,42 @@ namespace TAFESA_Enrolment_System.Model
             }
 
             return -1;
+        }
+        // ASC - Bubble Sort
+        public static void AscBubbleSort<T>(T[] array) where T : IComparable<T>
+        {
+            T temp;
+
+            for (int j = 0; j < array.Length - 1; j++)
+            {
+                for (int i = j + 1; i < array.Length; i++)
+                {
+                    if (array[j].CompareTo(array[i]) > 0)
+                    {
+                        temp = array[j];
+                        array[j] = array[i];
+                        array[i] = temp;
+                    }
+                }
+            }
+        }
+        // DEC - Bubble Sort
+        public static void DecBubbleSort<T>(T[] array) where T : IComparable<T>
+        {
+            T temp;
+
+            for (int j = 0; j < array.Length - 1; j++)
+            {
+                for (int i = j + 1; i < array.Length; i++)
+                {
+                    if (array[j].CompareTo(array[i]) < 0)
+                    {
+                        temp = array[j];
+                        array[j] = array[i];
+                        array[i] = temp;
+                    }
+                }
+            }
         }
     }
 }

@@ -70,6 +70,21 @@ class Program
         Console.WriteLine("\n[ S5 details (single-arg) ]");
         Console.WriteLine(s5);
 
+        string[] students_input = { "4", "53", "2", "35", "27", "3", "5", "7", "79", "13", "22", "6", "23" };
+        Console.WriteLine("\n");
+        foreach (string s in students_input)
+        {
+            Console.WriteLine(s);
+        }
+
+        Utility.AscBubbleSort<string>(students_input);
+
+        Console.WriteLine("\n");
+        foreach (string s in students_input)
+        {
+            Console.WriteLine(s);
+        }
+
         Console.ReadKey();
     }
 }
