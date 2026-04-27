@@ -102,7 +102,7 @@ namespace TAFESA_Enrolment_System.Model
             if (other == null)
                 return 1;
 
-            return StudentID.CompareTo(other.StudentID);
+            return int.Parse(StudentID).CompareTo(int.Parse(other.StudentID));
         }
     }
 }

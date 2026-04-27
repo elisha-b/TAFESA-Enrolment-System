@@ -85,6 +85,19 @@ class Program
             Console.WriteLine(s);
         }
 
+        Student[] studentarray = new Student[10];
+
+        for (int i = 0; i < studentarray.Length; i++)
+        {
+            string id = $"{i + 1}";
+            studentarray[i] = new Student(id);
+        }
+
+        foreach (var item in studentarray)
+        {
+            Console.WriteLine(item + "\n");
+        }
+        
         Console.ReadKey();
     }
 }

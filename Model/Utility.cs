@@ -8,7 +8,28 @@ namespace TAFESA_Enrolment_System.Model
 {
     public class Utility
     {
-        // Linear Search Array
+        /// PSEUDOCODE - Linear Search Array
+        /// 
+        /// FUNCTION LinearSearchArray(array, target)
+        ///     SET i = 0
+        ///     SET found = false
+        ///     WHILE found IS false AND i IS LESS THAN array.Length
+        ///         IF target IS EQUAL to array[i]
+        ///             SET found = true
+        ///         ELSE
+        ///             INCREMENT i
+        ///     IF i IS LESS THAN array.Length
+        ///         RETURN i
+        ///     ELSE
+        ///         RETURN -1
+
+        /// <summary>
+        /// Linear Search Array
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="array"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public static int LinearSearchArray<T>(T[] array, T target) where T : IComparable<T>
         {
             int i = 0;
@@ -26,58 +47,96 @@ namespace TAFESA_Enrolment_System.Model
                 return -1;
         }
 
-        // Binary Search Array
+        /// PSEUDOCODE - Binary Search Array
+        ///
+        /// FUNCTION BinarySearchArray(array, target)
+        ///     SET min = 0
+        ///     SET max = array.Length - 1
+        ///     
+        ///     DO
+        ///         SET min = (min + max) DIVIDED BY 2
+        ///         SET comparison = array[mid].CompareTo(target)
+        ///         
+        ///         IF comparison IS 0
+        ///             RETURN mid
+        ///         ELSE IF comparison IS LESS THAN 0
+        ///             SET min = mid + 1
+        ///         ELSE
+        ///             SET max = mid + 1
+        ///     UNTIL min > max
+        ///     
+        ///     RETURN -1
+
+        /// <summary>
+        /// Binary Search Array
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="array"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public static int BinarySearchArray<T>(T[] array, T target) where T : IComparable<T>
         {
-            int left = 0;
-            int right = array.Length - 1;
+            int min = 0;
+            int max = array.Length - 1;
+            int mid;
 
-            while (left <= right)
+            do
             {
-                int mid = left + (right - left) / 2;
+                mid = (min + max) / 2;
                 int comparison = array[mid].CompareTo(target);
 
                 if (comparison == 0)
                     return mid;
                 else if (comparison < 0)
-                    left = mid + 1;
+                    min = mid + 1;
                 else
-                    right = mid - 1;
-            }
+                    max = mid - 1;
+            } while (min <= max);
 
             return -1;
+
         }
-        // ASC - Bubble Sort
+
+        /// <summary>
+        /// ASC - Bubble Sort
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="array"></param>
         public static void AscBubbleSort<T>(T[] array) where T : IComparable<T>
         {
             T temp;
 
             for (int j = 0; j < array.Length - 1; j++)
             {
-                for (int i = j + 1; i < array.Length; i++)
+                for (int i = 0; i < array.Length - 1; i++)
                 {
-                    if (array[j].CompareTo(array[i]) > 0)
+                    if (array[i].CompareTo(array[i + 1]) > 0)
                     {
-                        temp = array[j];
-                        array[j] = array[i];
+                        temp = array[i + 1];
+                        array[i + 1] = array[i];
                         array[i] = temp;
                     }
                 }
             }
         }
-        // DEC - Bubble Sort
+        
+        /// <summary>
+        /// DEC - Bubble Sort
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="array"></param>
         public static void DecBubbleSort<T>(T[] array) where T : IComparable<T>
         {
             T temp;
 
             for (int j = 0; j < array.Length - 1; j++)
             {
-                for (int i = j + 1; i < array.Length; i++)
+                for (int i = 0; i < array.Length - 1; i++)
                 {
-                    if (array[j].CompareTo(array[i]) < 0)
+                    if (array[i].CompareTo(array[i + 1]) < 0)
                     {
-                        temp = array[j];
-                        array[j] = array[i];
+                        temp = array[i + 1];
+                        array[i + 1] = array[i];
                         array[i] = temp;
                     }
                 }
