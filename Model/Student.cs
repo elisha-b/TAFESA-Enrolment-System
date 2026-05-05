@@ -97,6 +97,67 @@ namespace TAFESA_Enrolment_System.Model
             return !Equals(x, y);
         }
 
+        /// <summary>
+        /// Checks if which of two Student objects are `<` based on Student ID
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>True or False</returns>
+        public static bool operator <(Student x, Student y)
+        {
+            if (ReferenceEquals(x, null))
+                return false;
+
+            return x.StudentID.CompareTo(y.StudentID) < 0;
+        }
+
+        /// <summary>
+        /// Checks if which of two Student objects are `<=` based on Student ID
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>True or False</returns>
+        public static bool operator <=(Student x, Student y)
+        {
+            if (ReferenceEquals(x, null))
+                return false;
+
+            return x.StudentID.CompareTo(y.StudentID) <= 0;
+        }
+
+        /// <summary>
+        /// Checks if which of two Student objects are `>` based on Student ID
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>True or False</returns>
+        public static bool operator >(Student x, Student y)
+        {
+            if (ReferenceEquals(x, null))
+                return false;
+
+            return x.StudentID.CompareTo(y.StudentID) > 0;
+        }
+
+        /// <summary>
+        /// Checks if which of two Student objects are `>=` based on Student ID
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns>True or False</returns>
+        public static bool operator >=(Student x, Student y)
+        {
+            if (ReferenceEquals(x, null))
+                return false;
+
+            return x.StudentID.CompareTo(y.StudentID) >= 0;
+        }
+
+        /// <summary>
+        /// Compares Student objects based on parsed StudentIDs to int
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
         public int CompareTo(Student other)
         {
             if (other == null)

@@ -41,7 +41,7 @@ namespace TestProject
 
             int search = Utility.LinearSearchArray(students, target); // sets Search to be the index of the Student object that has the ID 6505
 
-            Assert.That(search, Is.EqualTo(6504)); // Since the first index is 0, assert that the found index is target - 1
+            Assert.That(search, Is.EqualTo(int.Parse(target.StudentID) - 1)); // Since the first index is 0, assert that the found index is target - 1
         }
         [Test]
         public void BinarySearch()
@@ -50,7 +50,7 @@ namespace TestProject
 
             int search = Utility.BinarySearchArray(students, target); // sets Search to be the index of the Student object that has the ID 6505
 
-            Assert.That(search, Is.EqualTo(6504)); // Since the first index is 0, assert that the found index is target - 1
+            Assert.That(search, Is.EqualTo(int.Parse(target.StudentID) - 1)); // Since the first index is 0, assert that the found index is target - 1
         }
         [Test]
         public void AscBubbleSort()

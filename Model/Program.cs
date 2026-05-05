@@ -64,6 +64,27 @@ class Program
         Console.WriteLine("S2 == S4 (Exp. True): " + (s2 == s4));
         Console.WriteLine("S2 != S4 (Exp. False): " + (s2 != s4));
 
+        // Test <, <=, >=, >
+        Console.WriteLine("\n [ Comparator Test ]");
+        Student id1 = new Student("1");
+        Student id2 = new Student("2");
+
+        // Test <
+        Console.WriteLine("ID1 < ID2 (Exp. True): " + (id1 < id2));
+        Console.WriteLine("ID2 < ID1 (Exp. False): " + (id2 < id1));
+
+        // Test <=
+        Console.WriteLine("ID1 <= ID2 (Exp. True): " + (id1 <= id2));
+        Console.WriteLine("ID2 <= ID1 (Exp. False): " + (id2 <= id1));
+
+        // Test >
+        Console.WriteLine("ID1 > ID2 (Exp. False): " + (id1 > id2));
+        Console.WriteLine("ID2 > ID1 (Exp. True): " + (id2 > id1));
+
+        // Test >=
+        Console.WriteLine("ID1 >= ID2 (Exp. False): " + (id1 >= id2));
+        Console.WriteLine("ID2 >= ID1 (Exp. True): " + (id2 >= id1));
+
         // Test single-arg constructor
         Student s5 = new Student();
         s5.StudentID = "00839223";
