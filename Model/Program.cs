@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using TAFESA_Enrolment_System;
 using TAFESA_Enrolment_System.Model;
 
@@ -6,119 +7,181 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Create Person object p1
-        Console.WriteLine("[ Test getters Person class (no-arg) ]");
-        Person p1 = new Person();
-        Console.WriteLine(p1);
+        //// Create Person object p1
+        //Console.WriteLine("[ Test getters Person class (no-arg) ]");
+        //Person p1 = new Person();
+        //Console.WriteLine(p1);
 
-        Student s1 = new Student();
-        Console.WriteLine("\n[ Test getters Student class (no-arg) ]");
-        Console.WriteLine(s1);
+        //Student s1 = new Student();
+        //Console.WriteLine("\n[ Test getters Student class (no-arg) ]");
+        //Console.WriteLine(s1);
 
-        Student s2 = new Student("Alice Johnson", "a.johnson@gmail.com", "0411111111", new Address("456", "William St", "Adelaide", "5000", "SA"),
-                     "3648292", "Diploma of Info Tech", "2019-01-01", new Enrolment("2019-02-01", "F", 2, new Subject("IT395", "C#", 750.0)));
+        //Student s2 = new Student("Alice Johnson", "a.johnson@gmail.com", "0411111111", new Address("456", "William St", "Adelaide", "5000", "SA"),
+        //             "3648292", "Diploma of Info Tech", "2019-01-01", new Enrolment("2019-02-01", "F", 2, new Subject("IT395", "C#", 750.0)));
 
-        // Display p2 details
-        Console.WriteLine("\n[ S2 details (all-arg) ]");
-        Console.WriteLine(s2);
+        //// Display p2 details
+        //Console.WriteLine("\n[ S2 details (all-arg) ]");
+        //Console.WriteLine(s2);
 
-        Console.WriteLine("\n[ Test setters with S2 ]");
+        //Console.WriteLine("\n[ Test setters with S2 ]");
 
-        // Set p2 student details
-        s2.StudentID = "00123456";
-        s2.Program = "Diploma of IT";
-        s2.DateRegistered = "2020-01-01";
+        //// Set p2 student details
+        //s2.StudentID = "00123456";
+        //s2.Program = "Diploma of IT";
+        //s2.DateRegistered = "2020-01-01";
 
-        // Set p2 enrolment details
-        s2.Enrolment = new Enrolment("2020-02-01", "P", 1, new Subject("PRG547", "Advanced C#", 800.0));
+        //// Set p2 enrolment details
+        //s2.Enrolment = new Enrolment("2020-02-01", "P", 1, new Subject("PRG547", "Advanced C#", 800.0));
 
-        // Display p2 details
-        Console.WriteLine("\n[ S2 details (all-arg) ]");
-        Console.WriteLine(s2);
+        //// Display p2 details
+        //Console.WriteLine("\n[ S2 details (all-arg) ]");
+        //Console.WriteLine(s2);
 
-        // Create s3
-        Student s3 = new Student("John Doe", "john.doe@gmail.com", "0412345678", new Address("123", "Happy Rd", "Adelaide", "5000", "SA"),
-                     "00123457", "Diploma of IT", "2019-01-01", new Enrolment("2019-02-01", "P", 1, new Subject("DBS506", "Design Databases", 850.0)));
+        //// Create s3
+        //Student s3 = new Student("John Doe", "john.doe@gmail.com", "0412345678", new Address("123", "Happy Rd", "Adelaide", "5000", "SA"),
+        //             "00123457", "Diploma of IT", "2019-01-01", new Enrolment("2019-02-01", "P", 1, new Subject("DBS506", "Design Databases", 850.0)));
 
-        Console.WriteLine("\n[ S3 details ]");
-        Console.WriteLine(s3);
+        //Console.WriteLine("\n[ S3 details ]");
+        //Console.WriteLine(s3);
 
-        //// Create p4 (same StudentID as p2)
-        Student s4 = new Student();
+        ////// Create p4 (same StudentID as p2)
+        //Student s4 = new Student();
 
-        // Set p4 student details
-        s4.StudentID = "00123456";
+        //// Set p4 student details
+        //s4.StudentID = "00123456";
 
-        Console.WriteLine("\n[ S4 details ]");
-        Console.WriteLine(s4);
+        //Console.WriteLine("\n[ S4 details ]");
+        //Console.WriteLine(s4);
 
-        // Compare p2 to p3
-        Console.WriteLine("\n[ Compare S2 to S3 ]");
-        Console.WriteLine("S2 equals S3 (Exp. False): " + s2.Equals(s3));
-        Console.WriteLine("S2 == S3 (Exp. False): " + (s2 == s3));
-        Console.WriteLine("S2 != S3 (Exp. True): " + (s2 != s3));
+        //// Compare p2 to p3
+        //Console.WriteLine("\n[ Compare S2 to S3 ]");
+        //Console.WriteLine("S2 equals S3 (Exp. False): " + s2.Equals(s3));
+        //Console.WriteLine("S2 == S3 (Exp. False): " + (s2 == s3));
+        //Console.WriteLine("S2 != S3 (Exp. True): " + (s2 != s3));
 
-        // Compare p2 to p4
-        Console.WriteLine("\n[ Compare S2 to S4 ]");
-        Console.WriteLine("S2 equals S4 (Exp. True): " + s2.Equals(s4));
-        Console.WriteLine("S2 == S4 (Exp. True): " + (s2 == s4));
-        Console.WriteLine("S2 != S4 (Exp. False): " + (s2 != s4));
+        //// Compare p2 to p4
+        //Console.WriteLine("\n[ Compare S2 to S4 ]");
+        //Console.WriteLine("S2 equals S4 (Exp. True): " + s2.Equals(s4));
+        //Console.WriteLine("S2 == S4 (Exp. True): " + (s2 == s4));
+        //Console.WriteLine("S2 != S4 (Exp. False): " + (s2 != s4));
 
-        // Test <, <=, >=, >
-        Console.WriteLine("\n [ Comparator Test ]");
-        Student id1 = new Student("1");
-        Student id2 = new Student("2");
+        //// Test <, <=, >=, >
+        //Console.WriteLine("\n [ Comparator Test ]");
+        //Student id1 = new Student("1");
+        //Student id2 = new Student("2");
 
-        // Test <
-        Console.WriteLine("ID1 < ID2 (Exp. True): " + (id1 < id2));
-        Console.WriteLine("ID2 < ID1 (Exp. False): " + (id2 < id1));
+        //// Test <
+        //Console.WriteLine("ID1 < ID2 (Exp. True): " + (id1 < id2));
+        //Console.WriteLine("ID2 < ID1 (Exp. False): " + (id2 < id1));
 
-        // Test <=
-        Console.WriteLine("ID1 <= ID2 (Exp. True): " + (id1 <= id2));
-        Console.WriteLine("ID2 <= ID1 (Exp. False): " + (id2 <= id1));
+        //// Test <=
+        //Console.WriteLine("ID1 <= ID2 (Exp. True): " + (id1 <= id2));
+        //Console.WriteLine("ID2 <= ID1 (Exp. False): " + (id2 <= id1));
 
-        // Test >
-        Console.WriteLine("ID1 > ID2 (Exp. False): " + (id1 > id2));
-        Console.WriteLine("ID2 > ID1 (Exp. True): " + (id2 > id1));
+        //// Test >
+        //Console.WriteLine("ID1 > ID2 (Exp. False): " + (id1 > id2));
+        //Console.WriteLine("ID2 > ID1 (Exp. True): " + (id2 > id1));
 
-        // Test >=
-        Console.WriteLine("ID1 >= ID2 (Exp. False): " + (id1 >= id2));
-        Console.WriteLine("ID2 >= ID1 (Exp. True): " + (id2 >= id1));
+        //// Test >=
+        //Console.WriteLine("ID1 >= ID2 (Exp. False): " + (id1 >= id2));
+        //Console.WriteLine("ID2 >= ID1 (Exp. True): " + (id2 >= id1));
 
-        // Test single-arg constructor
-        Student s5 = new Student();
-        s5.StudentID = "00839223";
-        Console.WriteLine("\n[ S5 details (single-arg) ]");
-        Console.WriteLine(s5);
+        //// Test single-arg constructor
+        //Student s5 = new Student();
+        //s5.StudentID = "00839223";
+        //Console.WriteLine("\n[ S5 details (single-arg) ]");
+        //Console.WriteLine(s5);
 
-        string[] students_input = { "4", "53", "2", "35", "27", "3", "5", "7", "79", "13", "22", "6", "23" };
-        Console.WriteLine("\n");
-        foreach (string s in students_input)
-        {
-            Console.WriteLine(s);
-        }
+        //string[] students_input = { "4", "53", "2", "35", "27", "3", "5", "7", "79", "13", "22", "6", "23" };
+        //Console.WriteLine("\n");
+        //foreach (string s in students_input)
+        //{
+        //    Console.WriteLine(s);
+        //}
 
-        Utility.AscBubbleSort<string>(students_input);
+        //Utility.AscBubbleSort<string>(students_input);
 
-        Console.WriteLine("\n");
-        foreach (string s in students_input)
-        {
-            Console.WriteLine(s);
-        }
+        //Console.WriteLine("\n");
+        //foreach (string s in students_input)
+        //{
+        //    Console.WriteLine(s);
+        //}
 
-        Student[] studentarray = new Student[10];
+        //Student[] studentarray = new Student[10];
 
-        for (int i = 0; i < studentarray.Length; i++)
+        //for (int i = 0; i < studentarray.Length; i++)
+        //{
+        //    string id = $"{i + 1}";
+        //    studentarray[i] = new Student(id);
+        //}
+
+        //foreach (var item in studentarray)
+        //{
+        //    Console.WriteLine(item + "\n");
+        //}
+
+        //LinkedList<Student> studentList = new LinkedList<Student>
+        //{
+        //    new Student("12"),
+        //    new Student("34"),
+        //    new Student("64"),
+        //    new Student("34"),
+        //    new Student("23"),
+        //    new Student("45"),
+        //    new Student("22"),
+        //};
+
+        //foreach (Student item in studentList)
+        //{
+        //    Console.WriteLine(item);
+        //}
+        //Console.WriteLine("No. of students in list: " + studentList.Count);
+
+        //BinaryTree<Student> binaryTree = new BinaryTree<Student>();
+
+        //binaryTree.Add(new Student("4"));
+        //binaryTree.Add(new Student("2"));
+        //binaryTree.Add(new Student("6"));
+        //binaryTree.Add(new Student("1"));
+        //binaryTree.Add(new Student("5"));
+        //binaryTree.Add(new Student("3"));
+        //binaryTree.Add(new Student("7"));
+
+        //Node<Student> node = binaryTree.Find(new Student("4"));
+
+        //Console.WriteLine("PreOrder Traversal: ");
+        //binaryTree.TraversePreOrder(binaryTree.Root);
+
+        //Console.WriteLine("\nInOrder Traversal: ");
+        //binaryTree.TraverseInOrder(binaryTree.Root);
+
+        //Console.WriteLine("\nPostOrder Traversal: ");
+        //binaryTree.TraversePostOrder(binaryTree.Root);
+
+        //binaryTree.Remove(new Student("3"));
+        //binaryTree.Remove(new Student("4"));
+
+        //Console.WriteLine("\nPreOrder Traversal After Removing Operation: ");
+        //binaryTree.TraversePreOrder(binaryTree.Root);
+        //Console.WriteLine();
+
+        // -------------- DEBUGGING DEMO --------------
+
+        // Creating array of Student objects with IDs 1-10000
+        Student[] students = new Student[10000];
+
+        for (int i = 0; i < students.Length; i++)
         {
             string id = $"{i + 1}";
-            studentarray[i] = new Student(id);
+            students[i] = new Student(id);
         }
 
-        foreach (var item in studentarray)
-        {
-            Console.WriteLine(item + "\n");
-        }
-        
+        // Target student
+        Student target = new Student("7000");
+
+        // Running the Binary Search method
+        int search = Utility.BinarySearchArray(students, target);
+
         Console.ReadKey();
     }
 }

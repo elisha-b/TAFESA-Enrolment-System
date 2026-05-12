@@ -3,7 +3,7 @@ using System.CodeDom.Compiler;
 using System.Runtime.CompilerServices;
 using TAFESA_Enrolment_System.Model;
 
-namespace TestProject
+namespace TAFESA_Enrolment_System.TestUtiltiy
 {
     [TestFixture]
     class TestUtility
