@@ -9,13 +9,13 @@ namespace TAFESA_Enrolment_System.Model
 {
     class DoublyLinkedList<T> : ICollection<T>
     {
-        public LinkedListNode<T> Head
+        public DoublyLinkedListNode<T> Head
         {
             get;
             private set;
         }
 
-        public LinkedListNode<T> Tail
+        public DoublyLinkedListNode<T> Tail
         {
             get;
             private set;
@@ -29,12 +29,12 @@ namespace TAFESA_Enrolment_System.Model
 
         public void AddFirst(T value)
         {
-            AddFirst(new LinkedListNode<T>(value));
+            AddFirst(new DoublyLinkedListNode<T>(value));
         }
 
-        public void AddFirst(LinkedListNode<T> node)
+        public void AddFirst(DoublyLinkedListNode<T> node)
         {
-            LinkedListNode<T> temp = Head;
+            DoublyLinkedListNode<T> temp = Head;
             Head = node;
             Head.Next = temp;
 
@@ -52,10 +52,10 @@ namespace TAFESA_Enrolment_System.Model
 
         public void AddLast(T value)
         {
-            AddLast(new LinkedListNode<T>(value));
+            AddLast(new DoublyLinkedListNode<T>(value));
         }
 
-        public void AddLast(LinkedListNode<T> node)
+        public void AddLast(DoublyLinkedListNode<T> node)
         {
             if (Count == 0)
             {
@@ -114,7 +114,7 @@ namespace TAFESA_Enrolment_System.Model
 
         public bool Contains(T item)
         {
-            LinkedListNode<T> current = Head;
+            DoublyLinkedListNode<T> current = Head;
 
             while (current != null)
             {
@@ -131,7 +131,7 @@ namespace TAFESA_Enrolment_System.Model
 
         public void CopyTo(T[] array, int arrayIndex)
         {
-            LinkedListNode<T> current = Head;
+            DoublyLinkedListNode<T> current = Head;
             
             while (current != null)
             {
@@ -150,8 +150,8 @@ namespace TAFESA_Enrolment_System.Model
 
         public bool Remove(T item)
         {
-            LinkedListNode<T> previous = null;
-            LinkedListNode<T> current = Head;
+            DoublyLinkedListNode<T> previous = null;
+            DoublyLinkedListNode<T> current = Head;
 
             while (current != null)
             {
@@ -187,7 +187,7 @@ namespace TAFESA_Enrolment_System.Model
 
         public IEnumerator<T> GetEnumerator()
         {
-            LinkedListNode<T> current = Head;
+            DoublyLinkedListNode<T> current = Head;
 
             while (current != null)
             {

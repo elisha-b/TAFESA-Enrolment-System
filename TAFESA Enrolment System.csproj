@@ -121,6 +121,7 @@
     <Compile Include="Model\DoublyLinkedList.cs" />
     <Compile Include="Model\Enrolment.cs" />
     <Compile Include="Model\LinkedList.cs" />
+    <Compile Include="Model\DoublyLinkedListNode.cs" />
     <Compile Include="Model\LinkedListNode.cs" />
     <Compile Include="Model\Node.cs" />
     <Compile Include="Model\Person.cs" />

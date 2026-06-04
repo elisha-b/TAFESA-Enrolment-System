@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace TAFESA_Enrolment_System.Model
 {
-    class LinkedListNode<T>
+    class DoublyLinkedListNode<T>
     {
         public T Value { get; set; }
 
-        public LinkedListNode<T> Next { get; set; }
+        public DoublyLinkedListNode<T> Next { get; set; }
 
-        public LinkedListNode(T value)
+        public DoublyLinkedListNode<T> Previous { get; set; }
+
+        public DoublyLinkedListNode(T value)
         {
             Value = value;
         }
